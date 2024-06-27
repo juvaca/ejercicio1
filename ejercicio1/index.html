@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Áreas y Perímetros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Áreas y Perímetros</h1>
+        <form id="calculatorForm">
+            <label for="figura">Selecciona la figura:</label>
+            <select id="figura" name="figura">
+                <option value="cuadrado">Cuadrado</option>
+                <option value="rectangulo">Rectángulo</option>
+                <option value="triangulo">Triángulo</option>
+                <option value="circulo">Círculo</option>
+            </select>
+            <div id="medidas">
+                <label for="base">Base / Lado / Radio:</label>
+                <input type="number" id="base" name="base" required>
+                <label for="altura">Altura:</label>
+                <input type="number" id="altura" name="altura">
+            </div>
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+    </div>
+    <script src="calculo_figuras.js"></script>
+</body>
+</html>
